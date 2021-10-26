@@ -8,7 +8,6 @@ public class merit{
         int choice = select.nextInt();
         // condition for both types of candidates
         if (choice == 1){
-            // Creating Object for Input
         	Scanner obj = new Scanner(System.in);
 
       	// Taking Inputs from user
@@ -24,7 +23,7 @@ public class merit{
         // Calculating Merit According to the scheme 50% Matric and 50% NTS
         	double merit_cui = ((matric_percentage*0.5)+(nts_percentage*0.5));
 
-        	System.out.printf("Your Aggregate is: %5.2f", merit_cui);
+        	System.out.println("Your merit is :"+ merit_cui);
         }
     	else if (choice == 2){
     	// Creating Object for Input
@@ -46,7 +45,7 @@ public class merit{
         // Calculating Merit According to the scheme 10% Matric, 40% Inter and 50% NTS
         	double merit_cui = ((matric_percentage*0.1)+(inter_percentage*0.4)+(nts_percentage*0.5));
 
-        	System.out.printf("Your Aggregate is: %5.2f", merit_cui);
+        	System.out.println("Your merit is :"+ merit_cui);
     	}
     	else{
     		System.out.println("Invalid choice. Try Again! ");
